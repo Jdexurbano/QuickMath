@@ -61,7 +61,7 @@ function AdditionPage() {
 
   return (
     <>
-      <main className="h-screen w-screen px-[100px] pt-14 bg-secondary flex flex-col items-center">
+      <main className="h-screen w-screen px-[100px] pt-14 bg-primary flex flex-col items-center">
         <div className="w-[1030px] h-[256px] bg-slate-300 rounded-[30px] border-[5px] border-accent flex justify-center items-center gap-[50px] shadow-lg">
           <span className="text-[150px] font-semibold text-primary">
             {problem.num1}
