@@ -1,3 +1,5 @@
+/** @format */
+
 import React from "react";
 import { useState, useEffect } from "react";
 import Buttons from "./components/Buttons";
@@ -29,12 +31,7 @@ function AdditionPage() {
 
   //shuffle the item in the array
   const shuffleArray = (array) => {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], (array[j] = array[j]), array[i]];
-    }
-
-    return array;
+    return array.sort(() => Math.random() - 0.5);
   };
 
   //generate an option and return it as an array
