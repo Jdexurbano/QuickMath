@@ -1,7 +1,7 @@
 /** @format */
 
 import React from "react";
-
+import { Link } from "react-router-dom";
 function Nav() {
   return (
     <>
@@ -11,14 +11,27 @@ function Nav() {
         </div>
         <div className=" w-[700px]">
           <ul className="flex justify-evenly">
-            <li className="font-bold text-[25px] text-slate-200">Addition</li>
-            <li className="font-bold text-[25px] text-slate-200">
+            <Link className="font-bold text-[25px] text-slate-200" to="/">
+              Addition
+            </Link>
+            <Link
+              className="font-bold text-[25px] text-slate-200"
+              to="/subtraction"
+            >
               Subtraction
-            </li>
-            <li className="font-bold text-[25px] text-slate-200">
+            </Link>
+            <Link
+              className="font-bold text-[25px] text-slate-200"
+              to="/multiplication"
+            >
               Multiplication
-            </li>
-            <li className="font-bold text-[25px] text-slate-200">Division</li>
+            </Link>
+            <Link
+              className="font-bold text-[25px] text-slate-200"
+              to="/division"
+            >
+              Division
+            </Link>
           </ul>
         </div>
       </nav>
