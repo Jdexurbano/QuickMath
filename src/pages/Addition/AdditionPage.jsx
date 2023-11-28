@@ -25,6 +25,7 @@ function AdditionPage() {
   const [problem, setProblem] = useState(generateProblem());
   const [options, setOptions] = useState([]);
 
+  //call the generateOption() every time the problem change
   useEffect(() => {
     generateOption();
   }, [problem]);
