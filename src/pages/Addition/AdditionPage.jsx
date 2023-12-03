@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useState, useEffect } from "react";
-import Buttons from "./components/Buttons";
+import OptionsButton from "../../components/OptionsButton";
 function AdditionPage() {
   //generate and return the problem and the answer
   const generateProblem = () => {
@@ -72,7 +72,10 @@ function AdditionPage() {
           <span className="text-[150px] font-semibold text-red-600">?</span>
         </div>
         <div className="flex gap-[40px] mt-10">
-          <Buttons options={options} handleOptionClick={handleOptionClick} />
+          <OptionsButton
+            options={options}
+            handleOptionClick={handleOptionClick}
+          />
         </div>
       </main>
     </>

@@ -1,6 +1,8 @@
+/** @format */
+
 import React from "react";
 
-function Buttons({ options, handleOptionClick }) {
+function OptionsButton({ options, handleOptionClick }) {
   return (
     <>
       {options.map((option) => {
@@ -18,4 +20,4 @@ function Buttons({ options, handleOptionClick }) {
   );
 }
 
-export default Buttons;
+export default OptionsButton;
