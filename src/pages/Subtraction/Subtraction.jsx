@@ -11,8 +11,14 @@ function Subtraction() {
 
   //generate problem and answer
   const generateProblem = () => {
-    const num1 = generateNumber(1, 10);
-    const num2 = generateNumber(1, 10);
+    let num1 = generateNumber(1, 10);
+    let num2 = generateNumber(1, 10);
+    let temp;
+    if (num2 > num1) {
+      temp = num2;
+      num2 = num1;
+      num1 = temp;
+    }
     const answer = num1 - num2;
 
     return {
